@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+</head>
+<style>
+body {margin:0;}
+
+.icon-bar {
+    width: 100%;
+	height:12.5%;
+    background-color: #000;
+    overflow: auto;
+}
+
+.icon-bar a {
+    float: left;
+    width: 11.11%;
+	height:100%;
+    text-align: center;
+    padding: 12px 0;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 36px;
+}
+
+.icon-bar a:hover {
+    background-color:#F60;
+	color:#FF0;
+}
+
+.active {
+    background-color: #4CAF50 !important;
+}
+</style>
+
+<body><div class="icon-bar">
+  <a href="Untitled-1.html"><i class="fa fa-home"><br>home</i></a> 
+  
+  <a href="train routs.html"><i class="fa fa-building"><br>tourist spots</i></a> 
+  <a href="metro card.html"><i class="fa fa-money"><br>metro card</i></a>
+  <a href="helpline.html"><i class="fa fa-phone"><br> helpline</i></a>
+  <a href="safety.html"><i class="fa fa-book"><br>safety tips</i></a>
+  <a href="ticket cost.html"><i class="fa fa-ticket"><br>ticket prices</i></a>
+  <a href="map.html"><i class="fa fa-map"><br>map</i></a>
+  <a class="active" href="delay.html"><i class="fa fa-bell"><br>train timings</i></a>
+  <a href="donate.html"><i class="fa fa-rupee"><br>donate</i></a>
+</div>
+<center><h1><b><i><u><font face="Comic Sans MS, cursive">TRAIN TIMINGS AND DELAYS</font></u></i></b></h1></center>
+<br />
+<br />
+<font color="#000000"><button onclick="myFunction()">reload</button>
+<p id="demo"></p>
+<script>
+function myFunction() {
+    var hour = new Date().getHours(); 
+    var timings;
+    if (hour < 12) {
+        timings= "am timings";
+    } else {
+        timings = "pm timings";
+    }
+    document.getElementById("demo").innerHTML = timings;
+}
+</script>
+<br><br>
+
+<table cellpadding="10"  bgcolor="#00FFFF" title="Train timings and delays" bordercolor="#FF0000" border="3">
+<tr><th>S.No.</th> <th>STATION</th><th>TIME OF ARRIVAL</th><TH>TIME OF DEPARTURE</TH><TH>DELAY</TH></tr>
+<tr><th>1</th><td>Dilshad Garden</td><td>7:25</td><td>7:30</td><td>-----</td></tr>
+<tr><th>2</th><td>Jhil Mil</td><td>8:10</td><td>8:15</td><td>5 minutes</td></tr>
+<tr><th>3</th><td>Mansarovar Park</td><td>9:05</td><td>9:10</td><td>-----</td></tr>
+<tr><th>4</th><td>Shahdara</td><td>9:15</td><td>9:20</td><td>-----</td></tr>
+<tr><th>5</th><td>Welcome</td><td>6:00</td><td>6:05</td><td>-----</td></tr>
+<tr><th>6</th><td>Pitam Pura</td><td>1:20</td><td>1:25</td><td>3 to 10 minutes</td></tr>
+<tr><th>7</th><td>New Delhi</td><td>2:10</td><td>2:15</td><td>5 minutes</td></tr>
+<tr><th>8</th><td>Chandni Chowk</td><td>3:45</td><td>3:50</td><td>5 to 10 minutes</td></tr>
+
+</table></font>
+</body>
+</html>
